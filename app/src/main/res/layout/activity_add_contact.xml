@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AddContact">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/thumbnailTv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_centerHorizontal="true"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="180dp">
+        <EditText
+
+            android:id="@+id/firstNamEt"
+            android:layout_marginTop="30dp"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+        <EditText
+            android:id="@+id/phoneHomeEt"
+            android:background="@color/white"
+            android:layout_marginTop="85dp"
+            android:hint="Phone(Home)"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_below="@+id/phoneHomeEt"
+            android:layout_marginTop="145dp"
+            android:hint="Phone(Home)"
+            android:inputType="textEmailAddress"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_colorNormal="#F4511E"
+        android:src="@drawable/ic_baseline_done_24"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>

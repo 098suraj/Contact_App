@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetails">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="240dp"
+        android:id="@+id/cardone"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="15dp"
+        android:layout_marginStart="50dp"
+        >
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="120dp"
+            android:id="@+id/Contimg"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/contname"
+            android:hint="Name"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            />
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/contnum"
+            android:hint="Number"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="240dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#115968EC"
+    android:layout_height="match_parent"
+    tools:context=".Customdialer">
+     <androidx.cardview.widget.CardView
+         android:layout_width="350dp"
+         android:layout_height="550dp"
+         android:layout_marginStart="50dp"
+         android:layout_marginTop="200dp"
+         app:cardCornerRadius="30dp"
+         android:elevation="15dp">
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:src="@drawable/ic_baseline_phonelink_ring_24"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="30dp"
+             />
+         <EditText
+             android:layout_width="250dp"
+             android:id="@+id/num"
+             android:layout_gravity="center_horizontal"
+             android:gravity="center"
+             android:textSize="20sp"
+             android:hint="Enter Number"
+             android:background="@color/white"
+             android:layout_height="40dp"
+             android:layout_marginTop="350dp"/>
+
+         <com.getbase.floatingactionbutton.FloatingActionButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="480dp"
+             app:fab_colorNormal="#FFEB3B"
+             android:src="@drawable/ic_outline_call_24"
+             android:id="@+id/fncall"
+             android:layout_marginStart="270dp"
+            />
+     </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

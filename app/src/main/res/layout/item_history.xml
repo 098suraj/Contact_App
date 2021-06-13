@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:padding="4dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/his_card"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="7dp">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+           android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/his_image"
+            android:src="@drawable/ic_baseline_person_24"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/hisll"
+        android:layout_width="220dp"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp"
+        android:elevation="5dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="94dp"
+        >
+
+
+        <TextView
+            android:id="@+id/his_name"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="name"
+            style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/his_duration"
+            android:textSize="16sp"
+            android:text="duration"
+            style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/his_date"
+            android:textSize="16sp"
+            android:text="date"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="34dp"
+        android:id="@+id/hiscallbtn"
+        android:src="@drawable/ic_outline_call_24"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:layout_height="34dp"
+        android:layout_marginStart="340dp"/>
+        <ImageButton
+            android:id="@+id/hissmsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@color/white"
+            android:src="@drawable/ic_outline_textsms_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="390dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

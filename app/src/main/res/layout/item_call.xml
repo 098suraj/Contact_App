@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/card"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="7dp">
+        <ImageButton
+            android:id="@+id/callbtn"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_outline_call_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="290dp"/>
+        <ImageButton
+            android:id="@+id/smsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@color/white"
+            android:src="@drawable/ic_outline_textsms_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="350dp"/>
+        <ImageButton
+            android:id="@+id/vidobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_videocam_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="400dp"/>
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_image"
+            android:src="@drawable/ic_baseline_person_24"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ll"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp"
+            android:elevation="5dp"
+            android:layout_marginStart="84dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_name1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/purple_700"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_number1"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
