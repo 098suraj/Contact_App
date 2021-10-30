@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
@@ -16,17 +17,15 @@ public class Customdialer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customdialer);
-        TextView num=findViewById(R.id.num);
+        EditText num=findViewById(R.id.num);
         FloatingActionButton fncall=findViewById(R.id.fncall);
-        num.getText().toString();
+        num.getText().toString().trim();
         fncall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j =new Intent(Intent.ACTION_CALL);
-                String s ="tel:"+num;
-                j.setData(Uri.parse(s));
-                j.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(j);
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:" +num.getText().toString().trim()));
+                startActivity(callIntent);
             }
         });
 

@@ -194,7 +194,8 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == requestcode && grantResults.length > 0 &&
-                grantResults[0] + grantResults[1]
+                grantResults[0]
+                        + grantResults[1]
                         + grantResults[2]
                         + grantResults[3]
                         + grantResults[4]
