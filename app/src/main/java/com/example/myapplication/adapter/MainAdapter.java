@@ -10,8 +10,9 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.contactsapp.R;
 import com.example.myapplication.model.ContactModel;
-import com.example.myapplication.R;
+
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.R;
+
+import com.example.contactsapp.R;
 import com.example.myapplication.model.CallHisModel;
 import com.example.myapplication.model.ContactModel;
 

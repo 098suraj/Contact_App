@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         String num = getMyPhoneNO();
-        ph.setText(num.substring(2));
+
 
         adconta.setOnClickListener(new View.OnClickListener() {
             @Override

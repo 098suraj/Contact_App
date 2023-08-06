@@ -1,2 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://repo1.maven.org/maven2' }
+        jcenter()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://repo1.maven.org/maven2' }
+        mavenCentral()
+    }
+}
 rootProject.name = "My Application"
 include ':app'
